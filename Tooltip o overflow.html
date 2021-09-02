@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title> overflow o tooltip </title>
+
+   <style type="text/css" media="all">
+      h2 {
+         color: #bdb5fd;
+      }
+      /*display images*/
+      body {
+         background-image: url('/logo .jpg');
+         background-repeat: no-repeat;
+         background-position-x: 50%;
+         background-position-y: 3px;
+         
+         background-size: 150px;
+         background-attachment: ;
+      }
+
+      .overflow {
+         background-color: rgb(199,193,252);
+         background-image: url('/logo .jpg');
+         background-size: 270px 220px;
+         background-position: left;
+         background-repeat: no-repeat;
+         height: 200px;
+         width: 250px;
+         padding: 7px;
+         border: 3px Solid green;
+         color: red;
+         text-align: justify;
+         overflow: scroll;
+         text-indent: 1rem;
+
+
+      }
+      /* tooltip style */
+      .tooltip {
+         position: relative;
+      }
+      .tooltip .tooltipText {
+         visibility: hidden;
+         position: absolute;
+         top: 30px;
+         left: 5px;
+         color: black;
+         background-color: rgba(249,215,112,0.5);
+         border-radius: 5px;
+         padding: 5px;
+         width: 250px;
+         z-index: 1;
+
+      }
+      .tooltip:hover .tooltipText {
+         visibility: visible;
+         font-size: 10px;
+
+      }
+      .multipleCullomn {
+         column-count: 3;
+         column-rule: 1px Solid;
+         column-gap: 16px;
+         padding: 5px;
+         text-indent: 7px;
+         text-align: justify;
+         border-top: 1px solid black;
+      }
+      .newspaper {
+         font-size: 15px;
+
+         text-align: left;
+         color: green;
+         word-spacing: 1px;
+      }
+
+      #head {
+         column-span: all;
+         text-align: center;
+      }
+      .bookmark {
+         position: absolute;
+         right: 20px;
+         overflow: auto;
+         height: 50px;
+         width: 75px;
+         background-color: lightblue;
+         padding: 2px 10px;
+         border-radius: 7px;
+         
+      }
+      .bookmark >a{
+         text-decoration: none;
+      }
+   </style>
+</head>
+<body>
+   <div class=" bookmark ">
+      <span> jump to</span>
+      <a href="#p1">para1</a>
+      <a href="#p2">para2</a>
+      <a href="#p3">para3</a>
+      <a href="#p3">para4</a>
+      <a href="#p4">para5</a>
+      <a href="#p5">para6</a>
+      <a href="#p5">para7</a>
+      <a href="#p5">para8</a>
+      <a href="#p5">para9</a>
+      <a href="#p5">para10</a>
+      <a href="#p5">para11</a>
+      <a href="#p5">para12</a>
+      <a href="#p5">para13</a>
+      <a href="#p5">para14</a>
+      <a href="#p5">para15</a>
+   </div>
+
+   <h3> Tooltip </h3>
+   <a class="tooltip" href="#">
+      Facebook
+      <span class="tooltipText"> Facebook is very similar social media</span>
+   </a>
+
+
+   <h2> overflow </h2>
+   <div class="overflow">
+      <p>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, natus! Numquam eos illo autem accusantium, laudantium doloremque ratione eaque, modi hic a consequatur quasi dignissimos sapiente mollitia tenetur laborum quae necessitatibus, odio ullam. Ducimus quo tempora laborum ipsam possimus similique assumenda. Animi perferendis laborum voluptates blanditiis tempora voluptatum inventore, eius voluptatibus saepe atque at nisi nulla asperiores libero debitis labore nesciunt, dolorem expedita! Odit illo rerum quisquam eaque quis earum consequuntur reiciendis, nisi laboriosam expedita nesciunt excepturi at autem ut, beatae vitae in reprehenderit, dolorem unde minima doloremque! Minima cum illo facilis praesentium aliquam laudantium repellat ratione nobis eveniet ea quaerat, delectus molestiae asperiores adipisci labore earum qui quidem dolore doloribus numquam, provident incidunt, rerum illum nesciunt exercitationem. Dicta odio ducimus magni facere nisi accusantium veritatis, soluta dolorum obcaecati, commodi unde excepturi illum modi sint, eaque sapiente deleniti ipsum mollitia aliquid blanditiis cupiditate at. Consequatur consectetur, beatae perspiciatis aperiam excepturi sequi quis numquam earum dolorum magnam quia fugit voluptate quasi amet dicta modi obcaecati iste, magni optio facere alias fugiat incidunt temporibus minus. Aspernatur assumenda tenetur asperiores magni provident rerum, numquam sapiente, voluptatum id? In libero quia quae nihil, harum pariatur expedita animi quod commodi error repellat atque. Explicabo, error.
+      </p>
+   </div>
+
+   <h2 id="head" class="tooltip"> Daily New Age <span class="tooltipText"> This is a Daily newspaper in Bangladesh . </span> </h2>
+
+   <div class=" overflow2">
+      <strong class="newspaper"> Staff reporter, Dhaka: <br />
+      </strong>
+      <p class="multipleCullomn">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem vero ab unde temporibus voluptatum tempora nihil magni maiores eos itaque accusantium dolorum repudiandae corporis quaerat, minus obcaecati nisi atque iste beatae eveniet praesentium deserunt voluptatem! Sapiente veniam iure, itaque hic dolore laboriosam sed eos. Libero, deleniti. Assumenda accusantium quam ut nulla distinctio, eaque, fugiat doloribus nobis delectus aut harum omnis, quasi adipisci aperiam amet iste maxime sequi ex voluptatum. Quis accusamus, quidem totam optio deleniti. Nesciunt corporis porro soluta quo optio assumenda facilis inventore, illum magni necessitatibus veniam eos illo reiciendis, non atque debitis perferendis amet nam rem perspiciatis eum hic nobis? Incidunt corporis debitis dolorem minus delectus ea, necessitatibus ad officia suscipit dignissimos, nobis quia. Sunt quasi optio eos, veniam, magnam delectus perferendis eveniet nam quam aspernatur sed fuga laudantium facere ea vero voluptatem, illo quisquam magni dolorem! Recusandae sit mollitia modi possimus aspernatur ipsam aperiam voluptatibus. Totam distinctio suscipit, non itaque sapiente maxime odit ratione aspernatur nesciunt laudantium modi ad, libero odio quibusdam illo illum rem repudiandae praesentium, recusandae tempore hic qui voluptatem reiciendis, adipisci. Pariatur sed neque, sit provident quo praesentium dolores perspiciatis, iure itaque illo voluptatum odit autem repudiandae eligendi laboriosam officia ut veritatis reiciendis reprehenderit dolorem. Eaque odio facere in natus, architecto, neque laborum est id! Accusamus velit molestias, quia ipsam voluptates eius quae quaerat sit nam ea porro sequi. Eius natus doloribus dolorem? Quos, pariatur perspiciatis tempore ad iste iure dolor aliquam. Amet nihil, odit praesentium veritatis, corporis hic a optio. Maiores, asperiores, assumenda.
+      </p>
+   </div>
+   <hr>
+
+   <p id="p1">
+      <mark><strong>paragraph-1 </strong> </mark> <br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate at quasi, quidem laboriosam animi. Accusamus?
+   </p>
+   <br>
+   <p id="p2">
+      <mark><strong>paragraph-2 </strong> </mark> <br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate at quasi, quidem laboriosam animi. Accusamus?
+   </p>
+   <br>
+   <p id="p3">
+      <mark><strong>paragraph-3 </strong> </mark> <br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate at quasi, quidem laboriosam animi. Accusamus?
+   </p>
+   <br>
+   <p id="p4">
+      <mark><strong>paragraph-4</strong> </mark> <br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate at quasi, quidem laboriosam animi. Accusamus?
+   </p>
+   <br>
+   <p id="p5">
+      <mark><strong>paragraph-5 </strong> </mark> <br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate at quasi, quidem laboriosam animi. Accusamus?
+   </p>
+   <br>
+   <p id="p6">
+      <mark><strong>paragraph-6</strong> </mark> <br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate at quasi, quidem laboriosam animi. Accusamus?
+   </p>
+   <br>
+   <p id="p7">
+      <mark><strong>paragraph-7 </strong> </mark> <br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate at quasi, quidem laboriosam animi. Accusamus?
+   </p>
+   <br>
+   <p id="p8">
+      <mark><strong>paragraph-8</strong> </mark> <br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate at quasi, quidem laboriosam animi. Accusamus?
+   </p>
+   <br>
+   <p id="p9">
+      <mark><strong>paragraph-9</strong> </mark> <br>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate at quasi, quidem laboriosam animi. Accusamus?
+   </p>
+   <br>
+</body>
+</html>
